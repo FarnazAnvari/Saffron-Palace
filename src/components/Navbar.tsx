@@ -27,7 +27,7 @@ export default function Navbar() {
         scrolled ? "glass py-4" : "py-6 bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <nav className=" flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex flex-col leading-none group">
           <span className="font-display text-2xl text-gold-gradient">

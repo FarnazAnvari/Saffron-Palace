@@ -39,7 +39,7 @@ export default function AboutSection() {
             Saffron Palace was born from a deep reverence for Persian culinary
             heritage — a tradition spanning over three thousand years of
             artistry, spice, and ritual. From the royal kitchens of the
-            Achaemenid court to the fragrant bazaars of Isfahan, our recipes
+            Achaemenid court to the fragrant bazaars of Tabriz, our recipes
             carry the soul of ancient Persia.
           </p>
           <p className="font-body text-cream/60 leading-relaxed mb-12">

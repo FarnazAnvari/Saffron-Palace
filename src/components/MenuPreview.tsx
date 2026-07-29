@@ -69,8 +69,8 @@ const categories = [
 
 export default function MenuPreview() {
   return (
-    <section className="py-32 px-6 bg-surface">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-32  bg-surface">
+      <div className="">
         {/* Header */}
         <div className="text-center mb-20">
           <p className="font-body text-xs tracking-[0.5em] uppercase text-gold mb-4">

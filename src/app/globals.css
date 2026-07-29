@@ -198,7 +198,6 @@ body {
 /* ─── Section spacing helper ─────────────────────────────── */
 .section-padding {
   padding-block: 6rem;
-  padding-inline: clamp(1.5rem, 5vw, 5rem);
 }
 
 /* ─── Scrollbar ──────────────────────────────────────────── */
