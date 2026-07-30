@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Saffron Palace | Persian & Ottoman Fine Dining",
@@ -28,9 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="bg-background text-cream font-body antialiased">
+      <body className="min-h-dvh bg-background text-cream font-body antialiased flex flex-col">
         <Navbar />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

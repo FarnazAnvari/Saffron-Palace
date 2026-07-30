@@ -52,9 +52,9 @@ export default function Footer() {
   return (
     <footer className="bg-[var(--color-dark-secondary)] border-t border-[var(--color-gold)]/10 pt-20 pb-10 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 text-center ">
           {/* Brand */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 flex flex-col items-center text-center gap-4">
             <Link href="/" className="inline-block mb-6">
               <span className="font-display text-3xl text-gold-gradient block">
                 Saffron Palace
@@ -63,12 +63,16 @@ export default function Footer() {
                 Authentic Persian Cuisine
               </span>
             </Link>
-            <p className="text-[var(--color-cream)]/50 text-sm leading-relaxed max-w-xs mb-8">
+            <p className="text-[var(--color-cream)]/50 text-sm leading-relaxed max-w-md mx-auto mb-8">
               A sanctuary of fine dining where the ancient flavors of Persia
               come alive — rooted in tradition, perfected through generations.
             </p>
+
+            <p className="text-xs text-[var(--color-cream)]/30   mb-8  ">
+              © 2024 Saffron Palace. All rights reserved.
+            </p>
             {/* Socials */}
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center mb-8">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
@@ -105,12 +109,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[var(--color-gold)]/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-[var(--color-cream)]/30">
-            © 2024 Saffron Palace. All rights reserved.
-          </p>
-          <p className="text-xs text-[var(--color-cream)]/30">
-            Tehran · Isfahan
+        <div className="border-t border-[var(--color-gold)]/10 pt-8 flex justify-center md:justify-end">
+          <p className="text-xs text-[var(--color-cream)]/30  ">
+            Tehran · Tabriz
           </p>
         </div>
       </div>
