@@ -50,8 +50,8 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-dark-secondary)] border-t border-[var(--color-gold)]/10 pt-20 pb-10 px-6">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-[var(--color-dark-secondary)] border-t border-[var(--color-gold)]/10 pt-20 pb-10 px-6 ">
+      <div className="max-w-7xl mx-auto py-60">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 text-center ">
           {/* Brand */}
           <div className="md:col-span-2 flex flex-col items-center text-center gap-4">

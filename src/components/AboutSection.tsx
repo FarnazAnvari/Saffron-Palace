@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 // src/components/AboutSection.tsx
 const stats = [
   { value: "2", label: "Cities" },
@@ -9,18 +11,29 @@ const stats = [
 export default function AboutSection() {
   return (
     <section className="py-32 px-6 bg-background">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div className=" grid grid-cols-1 lg:grid-cols-2 gap-20 items-center ">
         {/* Images */}
         <div className="relative h-[560px]">
-          <div className="absolute top-0 left-0 w-3/4 h-4/5 bg-surface-2 border border-gold/10" />
-          <div className="absolute bottom-0 right-0 w-3/5 h-3/5 bg-surface border border-gold/20" />
-          {/* Placeholder label */}
-          <div className="absolute inset-8 flex items-center justify-center">
-            <p className="font-body text-cream/20 text-sm tracking-widest uppercase">
-              Photography Coming Soon
-            </p>
+          <div className="absolute top-0 left-0 w-3/4 h-4/5 overflow-hidden border border-gold/10">
+            <Image
+              src="/images/2.jpg"
+              alt="Persian fine dining experience"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
-          {/* Gold accent line */}
+
+          <div className="absolute bottom-0 right-0 w-3/5 h-3/5 overflow-hidden border border-gold/20">
+            <Image
+              src="/images/1.jpg"
+              alt="Persian cuisine detail"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+
           <div className="absolute -bottom-4 left-1/4 w-24 h-px bg-gold/60" />
         </div>
 
