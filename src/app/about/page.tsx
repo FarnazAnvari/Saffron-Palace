@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col items-center justify-center">
       {/* Hero */}
-      <section className="relative h-[50vh] flex items-end pb-16 px-6 bg-background overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center pb-16 px-6 bg-background overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center opacity-5">
           <div className="w-[600px] h-[600px] rounded-full border border-gold" />
         </div>
@@ -16,7 +18,6 @@ export default function AboutPage() {
           <div className="w-16 h-px bg-gold/60 mt-6" />
         </div>
       </section>
-
       {/* Story Section */}
       <section className="py-24 px-6 bg-background">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -50,19 +51,25 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Image placeholder */}
-          <div className="relative aspect-[4/5] bg-gold/5 border border-gold/10 overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="font-body text-xs tracking-[0.3em] uppercase text-gold/30">
-                Restaurant Interior
-              </span>
-            </div>
+          {/* Image */}
+          <div className="relative aspect-[4/5] overflow-hidden">
+            <Image
+              src="/images/restaurant-interior3.jpg"
+              alt="Saffron Palace restaurant interior"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
           </div>
-        </div>
-      </section>
-
+        </div>{" "}
+        {/* ← بسته‌شدن grid div */}
+      </section>{" "}
+      {/* ← بسته‌شدن Story section */}
       {/* Values */}
-      <section className="py-24 px-6 bg-background border-t border-gold/10">
+      <section
+        style={{ paddingTop: "6rem" }}
+        className="pt-16 pb-24 px-6 bg-background border-t border-gold/10"
+      >
         <div className="max-w-7xl mx-auto">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-12 text-center">
             What We Stand For

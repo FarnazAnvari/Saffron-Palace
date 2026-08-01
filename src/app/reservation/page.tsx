@@ -29,9 +29,9 @@ export default function ReservationPage() {
   }
 
   return (
-    <main className="flex flex-col bg-background">
+    <main className="flex flex-col bg-background items-center">
       {/* Hero */}
-      <section className="relative h-[40vh] flex items-end pb-16 px-6 overflow-hidden">
+      <section className="relative h-[40vh] flex items-center pb-16 px-6 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center opacity-5">
           <div className="w-[600px] h-[600px] rounded-full border border-gold" />
         </div>

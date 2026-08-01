@@ -34,7 +34,7 @@ export default function AboutSection() {
             />
           </div>
 
-          <div className="absolute -bottom-4 left-1/4 w-24 h-px bg-gold/60" />
+          <div className="absolute -bottom-4 left-1/4 w-24 h-px " />
         </div>
 
         {/* Content */}
