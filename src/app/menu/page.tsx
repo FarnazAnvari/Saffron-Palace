@@ -3,9 +3,9 @@ import MenuCategories from "@/components/menu/MenuCategories";
 
 export default function MenuPage() {
   return (
-    <main className="flex flex-col">
+    <div className="flex flex-col">
       <MenuHero />
       <MenuCategories />
-    </main>
+    </div>
   );
 }

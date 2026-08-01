@@ -5,7 +5,7 @@ import AboutSection from "@/components/AboutSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-24">
+    <main className="flex flex-col gap-24 ">
       <HeroSection />
       <MenuPreview />
       <FeatureHighlight />

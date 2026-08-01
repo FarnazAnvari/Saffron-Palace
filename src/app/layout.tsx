@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="min-h-dvh bg-background text-cream font-body antialiased flex flex-col">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 w-full">{children}</main>
         <Footer />
       </body>
     </html>

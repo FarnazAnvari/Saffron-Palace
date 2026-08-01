@@ -14,7 +14,7 @@
   --color-brown-light: #a0522d;
   --color-cream: #f5f0e8;
   --color-cream-muted: #c8bea8;
-    /* اضافه کن: */
+  /* اضافه کن: */
   --color-surface: #0d0a07;
   --color-surface-2: #1a1410;
   --color-background: #0d0a07;
@@ -22,7 +22,7 @@
   /* Fonts */
   --font-playfair: "Playfair Display", Georgia, serif;
   --font-inter: "Inter", system-ui, sans-serif;
-    /* Fonts — اضافه کن: */
+  /* Fonts — اضافه کن: */
   --font-display: "Playfair Display", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;
 

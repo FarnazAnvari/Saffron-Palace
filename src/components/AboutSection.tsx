@@ -11,12 +11,12 @@ const stats = [
 export default function AboutSection() {
   return (
     <section className="py-32 px-6 bg-background">
-      <div className=" grid grid-cols-1 lg:grid-cols-2 gap-20 items-center ">
+      <div className=" grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* Images */}
         <div className="relative h-[560px]">
           <div className="absolute top-0 left-0 w-3/4 h-4/5 overflow-hidden border border-gold/10">
             <Image
-              src="/images/2.jpg"
+              src="/images/4.jpg"
               alt="Persian fine dining experience"
               fill
               className="object-cover"

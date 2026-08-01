@@ -102,16 +102,19 @@ const categories = [
 
 export default function MenuCategories() {
   return (
-    <section className="py-24 px-6 bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-24 bg-background">
+      <div style={{ maxWidth: "960px", margin: "0 auto", padding: "0 24px" }}>
         {categories.map((cat, i) => (
           <div
             key={cat.title}
             className={`mb-24 ${i !== categories.length - 1 ? "border-b border-gold/10 pb-24" : ""}`}
           >
             {/* Category Header */}
-            <div className="flex items-baseline gap-6 mb-12">
-              <h2 className="font-display text-4xl md:text-5xl text-cream italic">
+            <div
+              className="flex items-baseline gap-6 "
+              style={{ marginBottom: "3rem", marginTop: "3rem" }}
+            >
+              <h2 className="font-display text-4xl md:text-5xl text-cream italic ">
                 {cat.title}
               </h2>
               <span className="font-body text-sm text-gold/60 tracking-widest">
