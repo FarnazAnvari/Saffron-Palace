@@ -19,6 +19,8 @@ export default function AboutSection() {
               src="/images/4.jpg"
               alt="Persian fine dining experience"
               fill
+              loading="eager"
+              priority
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
             />

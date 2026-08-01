@@ -57,6 +57,8 @@ export default function AboutPage() {
               src="/images/restaurant-interior3.jpg"
               alt="Saffron Palace restaurant interior"
               fill
+              loading="eager"
+              priority
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -84,7 +86,7 @@ export default function AboutPage() {
               {
                 num: "02",
                 title: "Seasonal Ingredients",
-                body: "We partner with local European farmers to source the freshest produce, married with premium imported Persian spices.",
+                body: "We partner with local European farmers to source the freshest produce, combined with premium imported Persian spices.",
               },
               {
                 num: "03",
