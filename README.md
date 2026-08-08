@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Saffron Palace — Restaurant Website
 
-## Getting Started
+A modern, responsive restaurant website built with **Next.js**, **Tailwind CSS**, and **TypeScript**.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Tech Stack
+
+| Tool         | Version          |
+| ------------ | ---------------- |
+| Next.js      | 16.x (Turbopack) |
+| React        | 19.x             |
+| TypeScript   | 5.x              |
+| Tailwind CSS | 4.x              |
+
+---
+
+## 📁 Project Structure
+
+src/
+
+├── app/
+
+│ ├── layout.tsx # Root layout
+
+│ ├── page.tsx # Home page
+
+│ ├── menu/
+
+│ │ └── page.tsx # Menu page
+
+│ ├── about/
+
+│ │ └── page.tsx # About page
+
+│ ├── contact/
+
+│ │ └── page.tsx # Contact page
+
+│ └── reservation/
+
+│ └── page.tsx # Reservation page
+
+├── components/
+
+│ ├── Navbar.tsx
+
+│ ├── Footer.tsx
+
+│ ├── MenuCategories.tsx
+
+│ └── …
+
+├── types/
+
+│ └── index.ts # Shared TypeScript interfaces
+
+└── public/
+
+└── images/ # Static assets
+
+🛠️ Getting Started
+Prerequisites
+Node.js >= 18.x
+npm or yarn
+Installation
+bash
+
+git clone https://github.com/your-username/saffron-palace.git
+
+cd saffron-palace
+
+npm install
+
+Development
+bash
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Build
+bash
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm run build
 
-## Learn More
+npm start
 
-To learn more about Next.js, take a look at the following resources:
+📄 Pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Home — Hero section, featured dishes, intro
+Menu — Full menu organized by category
+About — Story, values, and team
+Contact — Location map, contact info
+Reservation — Table booking form
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✨ Features
 
-## Deploy on Vercel
+Fully responsive design (mobile-first)
+Optimized images with next/image (LCP-aware)
+Type-safe data with shared TypeScript interfaces
+Google Maps embed for restaurant location
+Smooth scroll behavior
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🌐 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed on Vercel.
+
+📝 License
+MIT — free to use and modify.
