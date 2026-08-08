@@ -1,3 +1,6 @@
+import type { MenuItem, MenuCategory } from "@/types";
+
+
 export default function MenuHero() {
   return (
     <section className="relative h-[50vh] flex items-center justify-center pb-16 px-6 bg-background overflow-hidden">

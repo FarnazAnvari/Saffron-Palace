@@ -1,4 +1,8 @@
-const categories = [
+import type { MenuItem, MenuCategory } from "@/types";
+
+
+const categories 
+= [
   {
     title: "Starters",
     subtitle: "پیش غذا",
